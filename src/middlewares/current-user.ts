@@ -1,18 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { JWTService } from '../services/jwt';
-
-interface UserPayload {
-  id: string;
-  email: string;
-}
-
-declare global {
-  namespace Express {
-    interface Request {
-      currentUser?: UserPayload;
-    }
-  }
-}
+import { UserPayload } from '../interfaces/user-payload';
 
 const currentUser = (req: Request, res: Response, next: NextFunction) => {
   if (!req.session?.jwt) {

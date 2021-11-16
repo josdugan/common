@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { UserPayload } from '..';
+import { UserPayload } from '../interfaces/user-payload';
 
 class JWTService {
   static generate(user: UserPayload) {
