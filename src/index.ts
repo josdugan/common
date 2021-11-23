@@ -13,3 +13,9 @@ export * from './middlewares/validate-request';
 export * from './services/jwt';
 
 export * from './interfaces/user-payload';
+
+export * from './events/publisher';
+export * from './events/listener';
+export * from './events/subjects';
+export * from './events/ticket-created-event';
+export * from './events/ticket-updated-event';
