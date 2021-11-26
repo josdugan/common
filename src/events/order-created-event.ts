@@ -15,4 +15,4 @@ interface OrderCreatedEvent {
   };
 }
 
-export { OrderCreatedEvent as OrderCreated };
+export { OrderCreatedEvent };
